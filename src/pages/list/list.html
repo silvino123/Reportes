@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar color="orange">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title text-center>Mis Reportes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <h3 text-center>Lista de Reportes</h3>
+    <ion-searchbar color="menu">Buscar</ion-searchbar>
+    <br>
+    <ion-list >
+        <ion-item style="background:#eeeeee">
+          <ion-thumbnail item-start>
+            <img src="assets/imgs/ollo.jpg">
+          </ion-thumbnail>
+          <h3 style="color:orange">Gran bache</h3>
+          <p>Blvd Colosio y Quiroga</p>
+          <button ion-button  item-end  color="orange"><ion-icon name="pin"></ion-icon></button>
+          <button ion-button clear item-end>Enviado</button>
+          <h3 style="color:dodgerblue">16/10/2018</h3>
+        </ion-item>
+      </ion-list>
+    <ion-list>
+        <ion-item style="background:#eeeeee">  
+          <ion-thumbnail item-start>
+            <img src="assets/imgs/luz.jpg">
+          </ion-thumbnail>
+          <h3 style="color:orange">Lampara sin prender</h3>
+          <p>calle 3 esquina mendoza</p>
+          <button ion-button  item-end  color="orange"><ion-icon name="pin"></ion-icon></button>
+          <button ion-button clear item-end color="danger">Proceso</button>
+          <h3 style="color:dodgerblue">17/10/2018</h3>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+          <ion-item style="background:#eeeeee">
+            <ion-thumbnail item-start>
+              <img src="assets/imgs/fuga.jpg">
+            </ion-thumbnail>
+            <h3 style="color:orange">Fugan de Agua</h3>
+            <p>Blvd solidaridad y cardenas</p>
+            <button ion-button  item-end  color="orange"><ion-icon name="pin"></ion-icon></button>
+            <button ion-button clear item-end color="secondary">Finalizado</button>
+            <h3 style="color:dodgerblue">18/10/2018</h3>
+          </ion-item>
+        </ion-list>
+  <!-- <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-end>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div> -->
+</ion-content>
